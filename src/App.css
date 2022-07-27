@@ -50,9 +50,7 @@
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  /* background-color: #edf2f4;  for black theme */
-  /* background-color: #264653; */
-  background-color: #282b34;
+  background-color: var(--loading-bg-color);
   left: 15%;
   transform-origin: 50%;
   animation: circle 0.5s alternate infinite ease;
