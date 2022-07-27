@@ -1,6 +1,6 @@
 import "./App.css";
 import { Loader } from "./Components/Loader";
-import { ThemeSwitcher } from "./Components/<ThemeSwitcher";
+import { ThemeSwitcher } from "./Components/ThemeSwitcher";
 
 function App() {
   return (
