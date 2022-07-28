@@ -3,6 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+        "font-color": "var(--font-color)",
+        "loading-color": "var(--loading-color)",
+        "bg-color": "var(--bg-color)",
+        "loading-bg-color": "var(--loading-bg-color)",
+      },
       keyframes: {
         bounce: {
           "0%": {
