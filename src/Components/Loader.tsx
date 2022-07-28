@@ -44,3 +44,36 @@ export const Loader = () => {
     </AnimatePresence>
   );
 };
+
+export const Loader2 = () => {
+  const loaderVariants = {
+    animationOne: {
+      x: [-20, 20],
+      y: [0, -30],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "reverse",
+          duration: 1,
+          ease: "linear",
+        },
+        y: {
+          repeat: Infinity,
+          repeatType: "reverse",
+          duration: 0.5,
+          ease: "easeOut",
+        },
+      },
+    },
+  };
+
+  return (
+    <>
+      <motion.div
+        className="w-3 h-3 rounded-full mt-7 md:mb-4 mx-3 bg-loading-color"
+        variants={loaderVariants}
+        animate="animationOne"
+      ></motion.div>
+    </>
+  );
+};
