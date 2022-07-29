@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const ContactSection = (): ReactElement => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full text-primary-color">
       <Header title="Contact" center={true} />
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-3 items-center justify-evenly">
