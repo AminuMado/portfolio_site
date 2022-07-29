@@ -10,6 +10,8 @@ module.exports = {
         "loading-color": "var(--loading-color)",
         "bg-color": "var(--bg-color)",
         "loading-bg-color": "var(--loading-bg-color)",
+        "github-color": "var(--github-color)",
+        "linkedIn-color": "var(--linkedIn-color)",
       },
       keyframes: {
         bounce: {
