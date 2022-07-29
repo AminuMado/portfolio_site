@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import useSound from "use-sound";
-import { getInitialTheme } from "../Utils";
 // note using require and not import because typescript throws an error otherwise
 const lightModeSfx = require("../Assets/lightMode.mp3");
 const darkModeSfx = require("../Assets/darkMode.mp3");
 
-export const ThemeSwitcher = () => {
-  const [theme, setTheme] = React.useState(getInitialTheme());
-  const [darkMode, setDarkMode] = React.useState(
-    theme === "light" ? false : true
-  );
+type ThemeSwitcherProps = {
+  theme: "light" | "dark";
+  setTheme: React.Dispatch<React.SetStateAction<"light" | "dark">>;
+};
+
+export const ThemeSwitcher = ({ theme, setTheme }: ThemeSwitcherProps) => {
+  const [darkMode, setDarkMode] = useState(theme === "light" ? false : true);
   function toggleDarkMode(checked: boolean) {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
     setDarkMode(checked);
