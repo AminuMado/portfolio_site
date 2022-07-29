@@ -8,6 +8,8 @@
   --loading-color: #000000;
   --bg-color: #f4f4f9;
   --loading-bg-color: #282b34;
+  --github-color: #000814;
+  --linkedIn-color: #000814;
   /* #e6f0e3;  liked this contrast might find a good use for it */
 }
 .dark {
@@ -17,6 +19,8 @@
   --loading-color: #fff;
   --bg-color: #000814;
   --loading-bg-color: #edf2f4;
+  --github-color: #edf2f4;
+  --linkedIn-color: #edf2f4;
 }
 body {
   margin: 0;
