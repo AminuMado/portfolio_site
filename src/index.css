@@ -10,10 +10,10 @@
   --loading-bg-color: #282b34;
   --github-color: #000814;
   --linkedIn-color: #000814;
-  /* #e6f0e3;  liked this contrast might find a good use for it */
+  /* #e6f0e3;   rgb(73, 139, 192)liked this contrast might find a good use for it */
 }
 .dark {
-  --primary-color: rgb(73, 139, 192);
+  --primary-color: #edf2f4;
   --secondary-color: #6b6b6b;
   --font-color: #fde74c;
   --loading-color: #fff;
