@@ -70,7 +70,7 @@ export const Loader2 = () => {
   return (
     <>
       <motion.div
-        className="w-3 h-3 rounded-full mt-7 md:mb-4 mx-3 bg-loading-color"
+        className="w-3 h-3 rounded-full mt-7 md:mb-4 mx-3 bg-loading-color hover:bg-yellow-300"
         variants={loaderVariants}
         animate="animationOne"
       ></motion.div>
