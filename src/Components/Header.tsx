@@ -7,7 +7,7 @@ type Props = {
 
 export const Header = ({ title, center }: Props): ReactElement => {
   return (
-    <header className="grid grid-cols-1 w-full p-10 text-primary-color">
+    <header className="grid grid-cols-1 w-full text-primary-color">
       <div className="flex items-center w-full">
         {center && (
           <div className="flex-shrink flex-grow h-px bg-loading-color" />
