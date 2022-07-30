@@ -5,9 +5,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const ContactSection = (): ReactElement => {
   return (
-    <div className="flex flex-col w-full text-primary-color">
+    <section className="grid grid-cols-1 w-full p-10 text-primary-color">
       <Header title="Contact" center={true} />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-4">
         <div className="flex flex-col gap-3 items-center justify-evenly">
           <p>Write me an email at:</p>
           <h1 className="text-xl md:text-3xl">aminumukhtarmado@gmail.com</h1>
@@ -41,6 +41,6 @@ export const ContactSection = (): ReactElement => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

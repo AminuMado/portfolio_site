@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { Header } from "./Header";
 type SkillsSectionProps = {
   theme: "light" | "dark";
@@ -6,7 +6,7 @@ type SkillsSectionProps = {
 export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
   const isColored = theme === "light" ? "" : "colored";
   return (
-    <div className="text-primary-color">
+    <section className="grid grid-cols-1 w-full p-10 text-primary-color">
       <Header title="Skills & Tools" center={false} />
       <div className="flex flex-wrap justify-evenly p-5 gap-5">
         <div className="flex flex-col flex-grow flex-shrink items-center">
@@ -159,6 +159,6 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
