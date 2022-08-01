@@ -10,8 +10,8 @@
   --loading-bg-color: #282b34;
   --github-color: #000814;
   --linkedIn-color: #000814;
-  --card-color: #e9edc9;
-  /* #e6f0e3;   rgb(73, 139, 192)liked this contrast might find a good use for it */
+  --card-color: #d8e2dc;
+  /* #e6f0e3; #d8e2dc #e9edc9   rgb(73, 139, 192)liked this contrast might find a good use for it */
 }
 .dark {
   --primary-color: #edf2f4;
