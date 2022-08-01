@@ -1,7 +1,10 @@
 import { ReactElement, useState } from "react";
-import img_Src from "../Assets/comingsoon.gif";
-import img_Src1 from "../Assets/comingsoon1.gif";
-export const Carousel = (): ReactElement => {
+
+type CarouselProps = {
+  photo: string;
+  gif: string;
+};
+export const Carousel = ({ photo, gif }: CarouselProps): ReactElement => {
   const [isActive, setIsActive] = useState(0);
   return (
     <div className="carousel">
@@ -17,10 +20,10 @@ export const Carousel = (): ReactElement => {
       </div>
       <div className="carousel-inner">
         <div className={`carousel-item ${isActive === 0 ? "active" : ""}`}>
-          <img src={img_Src} className="" alt="..." />
+          <img src={photo} className="" alt="..." />
         </div>
         <div className={`carousel-item ${isActive === 1 ? "active" : ""}`}>
-          <img src={img_Src1} className="" alt="..." />
+          <img src={gif} className="" alt="..." />
         </div>
       </div>
     </div>
