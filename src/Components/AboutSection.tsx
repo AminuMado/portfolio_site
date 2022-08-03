@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { ScrollingText } from "../Utils";
+import { ScrollingText } from "./ScrollingText";
 import { Header } from "./Header";
 
 export const AboutSection = (): ReactElement => {
