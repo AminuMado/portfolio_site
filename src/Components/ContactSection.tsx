@@ -5,12 +5,14 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const ContactSection = (): ReactElement => {
   return (
-    <section className="grid grid-cols-1 w-full p-10 text-primary-color">
+    <section className="grid grid-cols-1 w-full p-10 text-primary-color text-xl">
       <Header title="Contact" center={true} />
       <div className="flex flex-col items-center mt-4">
         <div className="flex flex-col gap-3 items-center justify-evenly">
           <p>Write me an email at:</p>
-          <h1 className="text-xl md:text-3xl">aminumukhtarmado@gmail.com</h1>
+          <h1 className="text-lg font-semibold md:text-4xl ">
+            aminumukhtarmado@gmail.com
+          </h1>
         </div>
         <p className="text-center tracking-widest my-4 md:my-8 text-xl">OR</p>
         <div className="flex flex-col items-center justify-evenly">

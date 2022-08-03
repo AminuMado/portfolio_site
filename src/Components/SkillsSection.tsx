@@ -7,12 +7,12 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
   const isColored = theme === "light" ? "" : "colored";
   return (
     <section className="grid grid-cols-1 w-full p-10 text-primary-color">
-      <Header title="Skills & Tools" center={false} />
-      <div className="flex flex-wrap justify-evenly p-5 gap-5">
-        <div className="flex flex-col flex-grow flex-shrink items-center">
+      <Header title="Skills & Tools" center={true} />
+      <div className="flex flex-wrap justify-evenly p-5 gap-5 text-xl">
+        <div className="flex flex-col flex-grow flex-shrink items-center ">
           <h1>Front-end</h1>
           <div className="flex flex-col w-[335px] h-[400px] mt-4 mb-7 p-5 bg-card-color rounded-xl gap-3">
-            <div className="flex flex-grow flex-shrink justify-between px-5 ">
+            <div className="flex flex-grow flex-shrink justify-between px-5">
               <div className="flex flex-col basis-1/5 items-center gap-1 hover:scale-105">
                 <i className={`text-5xl devicon-html5-plain ${isColored}`}></i>
                 <span className="text-sm">HTML</span>
@@ -33,13 +33,13 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-javascript-plain ${isColored}`}
                 ></i>
-                <span className="text-sm">JAVASCRIPT</span>
+                <span className="text-sm">JavaScript</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-typescript-plain ${isColored}`}
                 ></i>
-                <span className="text-sm">TYPESCRIPT</span>
+                <span className="text-sm">TypeScript</span>
               </div>
             </div>
             <div className="flex flex-grow flex-shrink justify-between px-5 ">
@@ -47,19 +47,19 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-react-original ${isColored}`}
                 ></i>
-                <span className="text-sm">REACT</span>
+                <span className="text-sm">React</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-redux-original ${isColored}`}
                 ></i>
-                <span className="text-sm">REDUX</span>
+                <span className="text-sm">Redux</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-tailwindcss-plain ${isColored}`}
                 />
-                <span className="text-sm">TAILWIND</span>
+                <span className="text-sm">Tailwind</span>
               </div>
             </div>
           </div>
@@ -72,13 +72,13 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-nodejs-plain ${isColored} icon`}
                 ></i>
-                <span className="text-sm">NODEJS</span>
+                <span className="text-sm">NodeJs</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-express-original ${isColored}`}
                 ></i>
-                <span className="text-sm">EXPRESS</span>
+                <span className="text-sm">Express</span>
               </div>
             </div>
             <div className="flex flex-grow flex-shrink justify-evenly px-5 ">
@@ -86,13 +86,13 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-javascript-plain ${isColored}`}
                 ></i>
-                <span className="text-sm">JAVASCRIPT</span>
+                <span className="text-sm">JavaScript</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-typescript-plain ${isColored}`}
                 ></i>
-                <span className="text-sm">TYPESCRIPT</span>
+                <span className="text-sm">TypeScript</span>
               </div>
             </div>
             <div className="flex flex-grow flex-shrink justify-evenly px-5 ">
@@ -100,14 +100,14 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-mongodb-plain ${isColored} icon`}
                 ></i>
-                <span className="text-sm">MONGODB</span>
+                <span className="text-sm">MongoDB</span>
               </div>
 
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
                   className={`text-5xl basis-1/5 devicon-jest-plain ${isColored} icon`}
                 ></i>
-                <span className="text-sm">JEST</span>
+                <span className="text-sm">Jest</span>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-webpack-plain ${isColored} icon`}
                 ></i>
-                <span className="text-sm">WEBPACK</span>
+                <span className="text-sm">Webpack</span>
               </div>
             </div>
             <div className="flex flex-grow flex-shrink justify-evenly px-5 ">
@@ -147,7 +147,7 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
                 <i
                   className={`text-5xl basis-1/5 devicon-heroku-plain ${isColored} icon`}
                 ></i>
-                <span className="text-sm">HEROKU</span>
+                <span className="text-sm">Heroku</span>
               </div>
               <div className="flex flex-col items-center gap-1 hover:scale-105">
                 <i
