@@ -27,12 +27,12 @@ export const ProjectsSection = (): ReactElement => {
                     repoLink={project.repoLink}
                   />
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 md:text-lg">
                   {project.skills.map((skill) => (
                     <SkillTag key={skill} name={skill} />
                   ))}
                 </div>
-                <p className="text-justify">{project.summary}</p>
+                <p className="text-justify  lg:text-xl">{project.summary}</p>
               </div>
             </div>
           ))}
