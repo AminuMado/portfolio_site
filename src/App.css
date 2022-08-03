@@ -148,3 +148,64 @@
 .carousel-item.active {
   display: block;
 }
+/* Scrolling Text */
+.aboutsection_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scrollingtext_container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+}
+
+.scrollingtext_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to left, var(--bg-color), transparent);
+  height: 100%;
+  width: 40px;
+  z-index: 10;
+}
+.scrollingtext_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, var(--bg-color), transparent);
+  height: 100%;
+  width: 40px;
+  z-index: 10;
+}
+.scrollingtext_container span {
+  filter: brightness(1.5);
+  font-size: 35px;
+  font-family: Big Shoulders Stencil Display;
+  white-space: nowrap;
+}
+
+.scrollTextToLeft {
+  animation: scrollText 50s linear infinite;
+}
+
+.scrollTextToRight {
+  animation: scrollText 50s linear infinite reverse;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Landing */
+.landing_text {
+  font-family: Big Shoulders Stencil Display;
+}
