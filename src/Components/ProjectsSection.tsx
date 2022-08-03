@@ -1,7 +1,8 @@
 import { ReactElement } from "react";
 import { Header } from "./Header";
 import { Carousel } from "./Carousel";
-import { ProjectHeader, SkillTag } from "../Utils";
+import { SkillTag } from "./SkillTag";
+import { ProjectHeader } from "./ProjectHeader";
 import data from "../data";
 export const ProjectsSection = (): ReactElement => {
   return (
