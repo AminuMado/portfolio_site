@@ -283,7 +283,7 @@ export const ProjectHeader = ({
 }: ProjectHeaderProps): ReactElement => {
   return (
     <div className="flex items-center justify-center gap-5 m-2">
-      <h1 className="text-3xl">{title}</h1>
+      <h1 className=" text-2xl md:text-3xl">{title}</h1>
       <span className="flex items-center justify-center gap-5">
         <a
           href={liveLink}
@@ -303,6 +303,28 @@ export const ProjectHeader = ({
         >
           <i className={`text-2xl  devicon-github-original`} />
         </a>
+      </span>
+    </div>
+  );
+};
+
+type ScrollingTextProps = {
+  text: string;
+  direction: string;
+};
+
+export const ScrollingText = ({
+  text,
+  direction,
+}: ScrollingTextProps): ReactElement => {
+  return (
+    <div className={" scrollingtext_container w-[350px] md:w-[500px] h-[55px]"}>
+      <span
+        className={
+          direction === "left" ? "scrollTextToLeft" : "scrollTextToRight"
+        }
+      >
+        {Array(4).fill(text).join(" ")}
       </span>
     </div>
   );
