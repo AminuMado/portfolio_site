@@ -205,10 +205,6 @@
     transform: translateX(-50%);
   }
 }
-/* Landing */
-.landing_text {
-  font-family: Big Shoulders Stencil Display;
-}
 
 /* scroller */
 svg {
@@ -224,7 +220,6 @@ svg {
   padding-left: 7px;
   cursor: pointer;
   z-index: 2;
-  color: #c7c4b8;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
