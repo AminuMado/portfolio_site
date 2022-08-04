@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 const svgVariants = {
   initial: { rotate: -180 },
-  visible: { rotate: 0, transition: { duration: 1, delay: 7 } },
+  visible: { rotate: 0, transition: { duration: 2, delay: 7 } },
 };
 const pathVariants = {
   initial: { opacity: 0, pathLength: 0 },
   visible: {
     opacity: 1,
     pathLength: 1,
-    transition: { duration: 2, ease: "easeInOut", delay: 7 },
+    transition: { duration: 3, ease: "easeInOut", delay: 7 },
   },
 };
 export const Scroller = () => {
