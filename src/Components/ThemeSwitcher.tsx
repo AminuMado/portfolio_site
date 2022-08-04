@@ -42,7 +42,7 @@ export const ThemeSwitcher = ({ theme, setTheme }: ThemeSwitcherProps) => {
 
   return (
     <DarkModeSwitch
-      className="fixed right-4 top-1"
+      className="fixed right-4 top-1 z-10"
       checked={darkMode}
       onChange={toggleDarkMode}
       size={40}
