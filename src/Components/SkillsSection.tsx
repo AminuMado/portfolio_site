@@ -1,12 +1,31 @@
-import { ReactElement } from "react";
+import { ReactElement, useEffect } from "react";
 import { Header } from "./Header";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 type SkillsSectionProps = {
   theme: "light" | "dark";
 };
 export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
   const isColored = theme === "light" ? "" : "colored";
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  const SkillsSectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else control.start("hidden");
+  }, [control, inView]);
   return (
-    <section className="grid grid-cols-1 w-full p-10 text-primary-color">
+    <motion.section
+      ref={ref}
+      variants={SkillsSectionVariants}
+      initial="hidden"
+      animate={control}
+      className="grid grid-cols-1 w-full p-12 text-primary-color"
+    >
       <Header title="Skills & Tools" center={true} />
       <div className="flex flex-wrap justify-evenly p-5 gap-5 text-xl">
         <div className="flex flex-col flex-grow flex-shrink items-center ">
@@ -159,6 +178,6 @@ export const SkillsSection = ({ theme }: SkillsSectionProps): ReactElement => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

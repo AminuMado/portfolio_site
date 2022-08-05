@@ -1,11 +1,29 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import { Header } from "./Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export const ContactSection = (): ReactElement => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  const ContactSectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else control.start("hidden");
+  }, [control, inView]);
   return (
-    <section className="grid grid-cols-1 w-full p-10 text-primary-color text-xl">
+    <motion.section
+      ref={ref}
+      variants={ContactSectionVariants}
+      initial="hidden"
+      animate={control}
+      className="grid grid-cols-1 w-full p-12 text-primary-color text-xl"
+    >
       <Header title="Contact" center={true} />
       <div className="flex flex-col items-center mt-4">
         <div className="flex flex-col gap-3 items-center justify-evenly">
@@ -43,6 +61,6 @@ export const ContactSection = (): ReactElement => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
