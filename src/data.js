@@ -1,9 +1,11 @@
-import commingSoonSrc_1 from "./Assets/comingsoon.gif";
-import commingSoonSrc_2 from "./Assets/comingsoon1.gif";
+// import commingSoonSrc_1 from "./Assets/comingsoon.gif";
+// import commingSoonSrc_2 from "./Assets/comingsoon1.gif";
 import battleshipsGif from "./Assets/demoGifs/battleships_demo.gif";
 import battlshipsSrc from "./Assets/demoGifs/battleships.png";
 import findemallSrc from "./Assets/demoGifs/findemall.png";
 import findemallGif from "./Assets/demoGifs/findemall_demo.gif";
+import blogSiteSrc from "./Assets/demoGifs/blogSite.png";
+import blogSiteGif from "./Assets/demoGifs/blogSite.gif";
 const data = [
   {
     name: "Battleships",
@@ -27,10 +29,10 @@ const data = [
   },
   {
     name: "Blog Site",
-    liveLink: "#",
-    repoLink: "#",
-    photo: commingSoonSrc_1,
-    gif: commingSoonSrc_2,
+    liveLink: "https://aminumado.github.io/blog_client",
+    repoLink: "https://github.com/AminuMado/blog_client",
+    photo: blogSiteSrc,
+    gif: blogSiteGif,
     skills: ["React", "NodeJs", "Express", "MongoDB"],
     summary:
       "A platform for creating and managing a blog, built using the MERN stack. User authentication is handled via a simple username & password strategy with password hashing and salting for secure storage. JSON Web Tokens ensure that users remain authenticated as they navigate the site.",
